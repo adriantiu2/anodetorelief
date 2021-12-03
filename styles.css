@@ -1,0 +1,135 @@
+
+/*pop*/
+
+.popupbutton{
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 100ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  font-family:Times New Roman, serif;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family:Apple Chancery, serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+	max-height: 550px;
+  overflow-y: scroll;
+}
+
+/*pop*/
+
+body{
+	font-family: 'apple chancery';
+	background-image: url('wood.jpeg');
+}
+
+#file{
+	float:right;
+	margin-top: 10px;
+}
+
+img{
+}
+iframe{
+	float:right;
+	height:76.3vh;
+}
+
+.header1{
+	float:left;
+	font-size: 20px;
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+	color: #9c8468;
+	opacity: 0.4;
+	margin-top: 5px;
+}
+button{
+		  padding-right: 38px;
+  padding-left: 38px;
+  float:right;
+
+}
+
+/*#container {
+    position: relative;
+}
+*/
+.thumbnail{
+	width:700px;
+	position: absolute;
+    bottom:50px;
+    margin-left: -10px;
+}
+
+.glass{
+	/* background styles */
+	position: relative;
+	padding: 6px 12px;
+	background-color: green; /*for compatibility with older browsers*/
+	background-image: linear-gradient(green,lightgreen);
+
+	/* text styles */
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	font-family: serif;
+	font-weight: 100;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	margin-right:10px;
+box-shadow: 0px 1px 4px -2px #333;
+text-shadow: 0px -1px #333;
+}
+
+.glass:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.glass:hover{
+	background: linear-gradient(#073,#0fa);
+}
