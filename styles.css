@@ -6,6 +6,10 @@
 	margin-top: 10px;
 }
 
+.infop{
+	font-family:'Times New Roman', Serif;
+}
+
 .overlay {
   position: fixed;
   top: 0;
